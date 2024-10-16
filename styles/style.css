@@ -45,10 +45,6 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-  /* width: 0;
-  height: 0;
-  visibility: hidden;
-  margin: 0; */
 } 
 
 .content {
@@ -170,9 +166,6 @@ label span {
 }
 
 input[type="checkbox"]:checked + span {
-  /* background-color: white;
-  padding: 2px;
-  border: 1px solid black; */
   &::before {
     position: absolute;
     content: '';
@@ -294,35 +287,9 @@ input[type="checkbox"]:checked + span {
   text-decoration-color: white;
 }
 
-/* .content__card-link:focus {
-  outline: 0;
-}
-
-.content__card-link:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-} */
-
-/* .content__list-item:focus {
-  outline: 0;
-  &:focus-visible {
-    outline: 1px solid #fff;
-    outline-offset: 1px;
-  }
-} */
-
 .content__list-item {
   margin-left: 1px;
 }
-
-/* .content__list-item:focus {
-  outline: 0;
-}
-
-.content__list-item:focus-visible {
-  outline: 1px solid white;
-  outline-offset: 1px;
-} */
 
 .content__card-link:focus {
   outline: 0;
