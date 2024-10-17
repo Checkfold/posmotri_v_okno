@@ -10,6 +10,8 @@ html {
 
 .page {
   display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -51,8 +53,6 @@ ol {
 .content {
   display: flex;
   gap: 30px;
-  margin-top: 132px;
-  margin-left: 21px;
 }
 
 .result__video-container {
@@ -287,7 +287,6 @@ input[type="checkbox"]:checked + span {
 
 .content__card-link_current {
   background: #545050;
-
 }
 
 .content__card-link:hover {
