@@ -51,7 +51,8 @@ ol {
 .content {
   display: flex;
   gap: 30px;
-  margin: auto;
+  margin-top: 132px;
+  margin-left: 21px;
 }
 
 .result__video-container {
@@ -77,12 +78,10 @@ ol {
 
 .search-form__fieldset:nth-child(1) {
   width: 225px;
-  height: 54px;
 }
 
 .search-form__fieldset:nth-child(2) {
   width: 212px;
-  height: 49px;
 }
 
 .search-form__label {
@@ -93,6 +92,10 @@ ol {
   &:not(:last-child) {
     margin-right: 15px;
   }
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
 
 .search-form__label:focus {
@@ -125,6 +128,9 @@ ol {
 }
 
 .search-form__textfield {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   border-left: none;
   border-right: none;
   border-top: 1px solid white;
@@ -183,7 +189,7 @@ input[type="checkbox"]:checked + span {
 
 .button {
   padding: 6px 73.5px;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
@@ -248,14 +254,18 @@ input[type="checkbox"]:checked + span {
 .content__video-card-thumbnail {
   width: 194px;
   height: 107px;
+  object-fit: cover;
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: 'Oswald';
   font-size: 30px;
   font-weight: 700;
   color: white;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
