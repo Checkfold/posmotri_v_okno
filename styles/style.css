@@ -185,6 +185,7 @@ input[type="checkbox"]:checked + span {
 .search-form__submit-button {
   width: 194px;
   height: 34px;
+  margin-top: 20px;
 }
 
 .button {
@@ -196,7 +197,6 @@ input[type="checkbox"]:checked + span {
   color: white;
   background-color: transparent;
   border: 1px solid white;
-  margin-top: 20px;
 }
 
 .button:hover {
@@ -222,10 +222,13 @@ input[type="checkbox"]:checked + span {
   text-transform: uppercase;
 }
 
+.content__details {
+  width: 420px;
+}
+
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   margin-top: 20px;
   position: relative;
   overflow-y: auto;
@@ -239,6 +242,10 @@ input[type="checkbox"]:checked + span {
 
 .content__list-item:nth-child(1) {
   margin-top: 3px;
+}
+
+.content__list-item:not(:last-of-type) {
+  margin-bottom: 30px;
 }
 
 .content__accent {
@@ -313,5 +320,4 @@ input[type="checkbox"]:checked + span {
 
 .more-button {
   width: 399px;
-  height: 34px;
 }
